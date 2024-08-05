@@ -13,3 +13,7 @@ function mul(a, b){
 function div(a, b){
     return a / b;
 }
+
+function changeSign(a) {
+    return -a;
+}

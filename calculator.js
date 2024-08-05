@@ -2,7 +2,8 @@ const OPERATION = {
     sum: '+',
     subs: '-',
     mul: '*',
-    div: '/'
+    div: '/',
+    changeSign: '±'
 }
 
 
@@ -22,6 +23,8 @@ function calculate({a, b, operation}){
         case OPERATION.div:
             result = div(a, b)
             break
+        case OPERATION.changeSign: /// Применяется только к первому числу
+            return changeSign(a);
         default:
             break;
     }

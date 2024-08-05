@@ -11,9 +11,16 @@ btnResultNode.addEventListener('click', function(){
     const b = Number(inputBNode.value);
     const operation = selectOperationNode.value
 
-    const result = calculate({a, b, operation});
+    // const result = calculate({a, b, operation});
 
-    outputNode.innerHTML = result;s
+    let result;
+    if (operation === OPERATION.changeSign) {
+        result = calculate({ a, operation }); // Применяем смену знака только к числу a
+    } else {
+        result = calculate({ a, b, operation });
+    }
+
+    outputNode.innerHTML = result;
 });
 
 
