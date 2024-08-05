@@ -11,5 +11,5 @@ function mul(a, b){
 }
 
 function div(a, b){
-    return a/b;
+    return a / b;
 }
