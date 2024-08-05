@@ -11,13 +11,15 @@ function calc({a, b, operation}){
 
     switch (operation){
         case OPERATION.sum:
-            break
+            result = sum(a, b)
         case OPERATION.subs:
-            break
+            result = subs(a, b)
         case OPERATION.mul:
-            break
+            result = mul(a, b)
         case OPERATION.div:
-            break
+            result = div(a, b)
+        default:
+            break;
     }
 
     return result;
